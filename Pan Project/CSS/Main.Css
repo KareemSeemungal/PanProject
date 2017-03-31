@@ -1,0 +1,36 @@
+.body {
+   
+     /* Set rules to fill background */
+     height: 100%;
+     width: 1024px;
+	
+
+
+}
+.col-1 {
+	background: white;
+	width: 80%;
+	height: 550px;
+	border: 1px solid red;
+    padding: 1px;
+    margin-left : 35% ;
+	
+	
+}
+.pic1 {
+	width: 95%;
+	height: 450px;
+	margin-left: 2%;
+}
+.navbar {
+	width: 130%;
+	background: white;
+	
+}
+.col-2 {
+	background: white;
+	height: 200px;
+	width: 80%;
+	margin-left: 35%;
+	padding-top: 20px;
+}
