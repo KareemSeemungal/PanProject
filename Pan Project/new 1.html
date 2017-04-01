@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<link href="css\Main.Css" rel="stylesheet" /> <!--links the seperate css page to the main page-->
+  <link rel="stylesheet" href="C:\Users\SHENICE\Desktop\Project Bootstrap\Bootstrap Tests\css\bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  
+  <script type="text/javascript">
+
+    function vidplay() {
+       var video = document.getElementById("Video1");
+       var button = document.getElementById("play");
+       if (video.paused) {
+          video.play();
+          button.textContent = "||";
+       } else {
+          video.pause();
+          button.textContent = ">";
+       }
+    }
+
+    function restart() {
+        var video = document.getElementById("Video1");
+        video.currentTime = 0;
+    }
+
+    function skip(value) {
+        var video = document.getElementById("Video1");
+        video.currentTime += value;
+    }      
+</script>
+
+</head>
+<body>        
+
+<video id="Video1" >
+//  Replace these with your own video files. 
+     <source src="C:\Users\SHENICE\Desktop\Pan Project - 2\Video\D4 pan.avi" type="video/avi" />
+    
+</video>
+
+<div id="buttonbar">
+    <button id="restart" onclick="restart();">[]</button> 
+    <button id="rew" onclick="skip(-10)">&lt;&lt;</button>
+    <button id="play" onclick="vidplay()">&gt;</button>
+    <button id="fastFwd" onclick="skip(10)">&gt;&gt;</button>
+</div>         
+  
+  
+  
+  
+  </html>
