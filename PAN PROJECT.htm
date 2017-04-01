@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PAN PROJECT</title>
- 
+
+  <title>PAN PROJECT</title>  <!--Title of web page-->	
+  
+ <!--All relative features and links needed-->	
   <link href="css\Main.Css" rel="stylesheet" /> <!--links the seperate css page to the main page-->
+  <!--links the seperate bootstrap css-->	
   <link rel="stylesheet" href="C:\Users\SHENICE\Desktop\Project Bootstrap\Bootstrap Tests\css\bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+  <!--link and supports jquery-->	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  <!--link and supports bootstrap options and features-->	
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
 	
 </head>
-<body class=body background="C:\Users\SHENICE\Desktop\Pan Project\Images\mzl.hkmgdbxd.png">
+<body class=body background="Images\mzl.hkmgdbxd.png"> <!--beginning of the body tag and its class identified as "body" to alter in css-->
+	
 
 <!--The navigation bar is styled by both the navbar and navbar-inverse classes-->
 <nav class="navbar navbar-default" > 
@@ -20,12 +26,10 @@
     </div>
     <!--Including the nav, navbar-nav and navbar-right classes styles the navigation bar appropriately-->
     
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-        
-      
+	<!--contents of the nav bar-->	
+    <ul class="nav navbar-nav"> <!--unordered list created-->	
+      <li class="active"><a href="#">Home</a></li> <!--link created for the home button in the nav bar-->	
             <li class="divider"></li>
-            <li><a href="about.htm">About</a></li>
           </ul>
       </li>
     </ul>
@@ -33,35 +37,117 @@
 </body>
 <main>
 
-<div class='col-1'>  <!--first div box created, row 1-->
-    <h2 class = "h2">
-	    PLAY PAN <br> <!--div box Text-->
-		
-
-		<img src="C:\Users\SHENICE\Desktop\Pan Project\Images\pan.jpg" alt="Pan Picture" class = "pic1">
-		
-		<script>
+<!-- the following script allows you view multiple videos-->
+<!-- it retrieves the videos by the ID "change" one by one-->
+<script>
   function changevid(buttonlink) { 
     document.getElementById('change').src = buttonlink;
 }
 </script>
 
 
-<button class = "buttons" onClick="changevid('C:\Users\SHENICE\Videos\B4_cut_part2.mp4')">A4</button>
-<button onClick="changevid('C:\Users\SHENICE\Desktop\Pan Project3\Video\Pan 4 Notes\A4.mp4')">C4</button>
-<button onClick="changevid('C:\Users\SHENICE\Videos\B4_cut_part2(1).mp4')">B4</button>
-<button onClick="changevid('videos/G4.mp4')">G4</button>
 
-
-<video controls id="change" width= "500" height= "500" align = "center"  >
-  <source src="C:\Users\SHENICE\Downloads\A4 pan-11490251416.mp4"></source>
-  <source src="C:\Users\SHENICE\Downloads\A4 pan-11490251416.mp4" id="change" type="video/mp4"></source>
+<div class='col-1'>  <!--first div box created, row 1-->
+    <h2 class = "h2">
+	    PLAY PAN <br> <!--div box Text-->
+		
+		
+		<!--video tag and source codes for each individual video-->
+		<!--code retrieves the video from destination for play-->
+<video controls id="change" width= "700" height= "350" align = "center" autoplay> <!--dimension of video is set-->
+  
+  <!--first set of pan note videos assigned to buttons-->	
+  <source src="Video\A4.mp4"source>
+  <source src="Video\B4.mp4"source>
+  <source src="Video\Bb4.mp4"source>
+  <source src="Video\C2.mp4"source>
+  <source src="Video\C4.mp4"source>
+  <source src="Video\D4.mp4"source>
+  <source src="Video\E4.mp4"source>
+  <source src="Video\E2.mp4"source>
+  <source src="Video\F2.mp4"source>
+  <source src="Video\F4.mp4"source>
+  <source src="Video\G2.mp4"source>
+  <source src="Video\G4.mp4"source>
+  
+   <!--second set of pan note videos assigned to buttons-->
+  <source src="Video\A5.mp4"source>
+  <source src="Video\B5.mp4"source>
+  <source src="Video\C25.mp4"source>
+  <source src="Video\C5.mp4"source>
+  <source src="Video\D5.mp4"source>
+  <source src="Video\E5.mp4"source>
+  <source src="Video\F25.mp4"source>
+  <source src="Video\F5.mp4"source>
+  <source src="Video\G25.mp4"source>
+  <source src="Video\G5.mp4"source>
+  <source src="Video\E5.mp4"source>
+  <source src="Video\D5.mp4"source>
+  
+   <!--third set of pan note videos assigned to buttons-->
+  <source src="Video\C6.mp4"source>
+  <source src="Video\C26.mp4"source>
+  <source src="Video\D6.mp4"source>
+  <source src="Video\E6.mp4"source>
+  <source src="Video\E6.mp4"source>
+  
+   <!--Pan song video assigned to button-->
+  <source src="Video/Baa baa.mp4"source>
+  
+  
+  
+  
+  
+  
 </video>
 
- 
+
+<!--first set of buttons for pan note videos labelled by musical note-->
+<button onClick="changevid('Video/A4.mp4');">A4</button>
+<button onClick="changevid('Video/B4.mp4');">B4</button>
+<button onClick="changevid('Video/Bb4.mp4');">Bb4</button>
+<button onClick="changevid('Video/C2.mp4');">C#4</button>
+<button onClick="changevid('Video/C4.mp4');">C4</button>
+<button onClick="changevid('Video/D4.mp4');">D4</button>
+<button onClick="changevid('Video/E4.mp4');">E4</button>
+<button onClick="changevid('Video/E2.mp4');">Eb4</button>
+<button onClick="changevid('Video/F2.mp4');">F#4</button>
+<button onClick="changevid('Video/F4.mp4');">F4</button>
+<button onClick="changevid('Video/G2.mp4');">G#4</button>
+<button onClick="changevid('Video/G4.mp4');">G4</button>
+
+<br><!--Pan song video assigned to button-->
+
+<!--second set of buttons for pan note videos labelled by musical note-->
+<button onClick="changevid('Video/A5.mp4');">A5</button>
+<button onClick="changevid('Video/B5.mp4');">B5</button>
+<button onClick="changevid('Video/C5.mp4');">C5</button>
+<button onClick="changevid('Video/C25.mp4');">C#5</button>
+<button onClick="changevid('Video/D5.mp4');">D5</button>
+<button onClick="changevid('Video/E5.mp4');">E5</button>
+<button onClick="changevid('Video/F5.mp4');">F5</button>
+<button onClick="changevid('Video/F25.mp4');">F#5</button>
+<button onClick="changevid('Video/G5.mp4');">G5</button>
+<button onClick="changevid('Video/G25.mp4');">G#5</button>
+<button onClick="changevid('Video/E5.mp4');">E5</button>
+<button onClick="changevid('Video/D5.mp4');">D5</button>
+
+<br>
+
+<!--third set of buttons for pan note videos labelled by musical note-->
+<button onClick="changevid('Video/C6.mp4');">C6</button>
+<button onClick="changevid('Video/C26.mp4');">C#6</button>
+<button onClick="changevid('Video/D6.mp4');">D6</button>
+<button onClick="changevid('Video/E6.mp4');">E6</button>
+<button onClick="changevid('Video/E6.mp4');">Eb</button>
+
+<!--Pan Song button for pan song video-->
+<button onClick="changevid('Video/Baa baa.mp4');">Baa Baa Black Sheep Song</button>
+
+
+	 </div>	<!--closes div tag-->
 		
-		
-     </div> <!--div is closed-->
+     
 
   </main>
 </html>
