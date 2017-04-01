@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAN PROJECT</title>
+ 
+  <link href="css\Main.Css" rel="stylesheet" /> <!--links the seperate css page to the main page-->
+  <link rel="stylesheet" href="C:\Users\SHENICE\Desktop\Project Bootstrap\Bootstrap Tests\css\bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+	
+</head>
+<body class=body background="C:\Users\SHENICE\Desktop\Pan Project\Images\mzl.hkmgdbxd.png">
+
+<!--The navigation bar is styled by both the navbar and navbar-inverse classes-->
+<nav class="navbar navbar-default" > 
+  <div class="container-fluid"> 
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span class="glyphicon-gift"></span>MOON'S PAN PRACTICE:)</span></a>
+    </div>
+    <!--Including the nav, navbar-nav and navbar-right classes styles the navigation bar appropriately-->
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+        
+      
+            <li class="divider"></li>
+            <li><a href="about.htm">About</a></li>
+          </ul>
+      </li>
+    </ul>
+</nav>
+</body>
+<main>
+
+<div class='col-1'>  <!--first div box created, row 1-->
+    <h2 class = "h2">
+	    PLAY PAN <br> <!--div box Text-->
+		
+
+		<img src="C:\Users\SHENICE\Desktop\Pan Project\Images\pan.jpg" alt="Pan Picture" class = "pic1">
+		
+		<script>
+  function changevid(buttonlink) { 
+    document.getElementById('change').src = buttonlink;
+}
+</script>
+
+
+<button class = "buttons" onClick="changevid('C:\Users\SHENICE\Videos\B4_cut_part2.mp4')">A4</button>
+<button onClick="changevid('C:\Users\SHENICE\Desktop\Pan Project3\Video\Pan 4 Notes\A4.mp4')">C4</button>
+<button onClick="changevid('C:\Users\SHENICE\Videos\B4_cut_part2(1).mp4')">B4</button>
+<button onClick="changevid('videos/G4.mp4')">G4</button>
+
+
+<video controls id="change" width= "500" height= "500" align = "center"  >
+  <source src="C:\Users\SHENICE\Downloads\A4 pan-11490251416.mp4"></source>
+  <source src="C:\Users\SHENICE\Downloads\A4 pan-11490251416.mp4" id="change" type="video/mp4"></source>
+</video>
+
+ 
+		
+		
+     </div> <!--div is closed-->
+
+  </main>
+</html>
